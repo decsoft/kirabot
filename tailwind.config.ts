@@ -93,6 +93,10 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 5s ease-in-out infinite',
+			},
+			boxShadow: {
+				'card': '0 4px 8px rgba(0, 0, 0, 0.2)',
+				'button': '0 2px 4px rgba(0, 0, 0, 0.1)',
 			}
 		}
 	},

@@ -33,7 +33,7 @@ const FaqSection: React.FC = () => {
           {faqs.map((faq, index) => (
             <div 
               key={index} 
-              className="bg-white/10 backdrop-blur-sm rounded-xl mb-4 overflow-hidden"
+              className="bg-white/30 backdrop-blur-sm rounded-xl mb-4 overflow-hidden shadow-md"
             >
               <button 
                 className="flex justify-between items-center w-full p-5 text-left"
@@ -41,9 +41,9 @@ const FaqSection: React.FC = () => {
               >
                 <h3 className="text-lg font-semibold text-white">{t(faq.questionKey)}</h3>
                 {openIndex === index ? (
-                  <ChevronUp className="h-5 w-5 text-white/70" />
+                  <ChevronUp className="h-5 w-5 text-white" />
                 ) : (
-                  <ChevronDown className="h-5 w-5 text-white/70" />
+                  <ChevronDown className="h-5 w-5 text-white" />
                 )}
               </button>
               <div 
@@ -51,7 +51,7 @@ const FaqSection: React.FC = () => {
                   openIndex === index ? 'max-h-40' : 'max-h-0'
                 }`}
               >
-                <div className="p-5 pt-0 text-white/80">
+                <div className="p-5 pt-0 text-white bg-black/10">
                   {t(faq.answerKey)}
                 </div>
               </div>

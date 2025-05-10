@@ -26,20 +26,20 @@
     --ring: 160 84% 39%;
     --radius: 0.5rem;
     
-    /* Brand Colors - Modern Green Theme */
-    --gradient-top: 160 84% 39%; /* #0d9488 - Teal */
-    --gradient-bottom: 172 66% 50%; /* #14b8a6 - Light Teal */
-    --card-bg: 158 64% 52%; /* #10b981 - Emerald */
+    /* Brand Colors - Enhanced visibility */
+    --gradient-top: 166 76% 27%; /* #0f766e - Darker Teal for better contrast */
+    --gradient-bottom: 172 66% 36%; /* #0d9488 - Mid Teal */
+    --card-bg: 158 64% 41%; /* #10b981 - Adjusted Emerald */
     --text-color: 0 0% 100%; /* #FFFFFF */
-    --meta-accent: 148 60% 60%; /* #34d399 - Mint */
-    --team-accent: 142 70% 45%; /* #22c55e - Green */
-    --ai-accent: 170 80% 40%; /* #0f766e - Dark Teal */
-    --whatsapp-green: 142 70% 49%; /* #25D366 - Original WhatsApp green */
+    --meta-accent: 199 89% 62%; /* #38bdf8 - Brighter Sky Blue */
+    --team-accent: 142 70% 63%; /* #4ade80 - Brighter Green */
+    --ai-accent: 276 91% 79%; /* #c4b5fd - Light Purple */
+    --whatsapp-green: 142 70% 49%; /* #25D366 - WhatsApp green */
   }
 
   .dark {
     /* We'll keep the same theme for dark mode as the branding is specific */
-    --background: 160 84% 39%;
+    --background: 166 76% 27%;
     --foreground: 0 0% 100%;
   }
 }
@@ -56,14 +56,16 @@
   
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Add text shadow for better readability */
   }
   
   .bg-gradient {
-    background: linear-gradient(180deg, hsl(160, 84%, 39%) 0%, hsl(172, 66%, 50%) 100%);
+    background: linear-gradient(180deg, hsl(166, 76%, 27%) 0%, hsl(172, 66%, 36%) 100%);
   }
   
   .feature-card {
-    background-color: hsl(158, 64%, 52%);
+    background-color: hsl(158, 64%, 41%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
   }
   
   .whatsapp-btn {
@@ -71,14 +73,24 @@
   }
   
   .meta-icon {
-    color: hsl(148, 60%, 60%);
+    color: hsl(199, 89%, 62%);
   }
   
   .ai-icon {
-    color: hsl(170, 80%, 40%);
+    color: hsl(276, 91%, 79%);
   }
   
   .team-icon {
-    color: hsl(142, 70%, 45%);
+    color: hsl(142, 70%, 63%);
+  }
+  
+  /* Improved text contrast */
+  .text-white\/80 {
+    @apply text-white/90; /* Increase opacity for better visibility */
+  }
+  
+  /* Enhanced card visibility */
+  .bg-white\/10 {
+    @apply bg-white/20; /* Increase opacity for better contrast */
   }
 }
