@@ -33,11 +33,16 @@ const HeroSection: React.FC = () => {
           <div className="mt-16 md:mt-20 relative">
             <div className="bg-white/10 rounded-xl p-2 md:p-4 backdrop-blur-sm shadow-2xl">
               <div className="relative overflow-hidden rounded-lg shadow-inner min-h-[240px] md:min-h-[360px]">
-                <div className="bg-card-bg rounded-lg h-full w-full object-cover animate-float flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-xl md:text-2xl font-bold mb-2">Decsoft Bot Dashboard</div>
+                <div className="bg-card-bg rounded-lg h-full w-full flex flex-col items-center justify-center p-4">
+                  <div className="text-center mb-4">
+                    <div className="text-xl md:text-2xl font-bold mb-2">KiraBot by Decsoft AI</div>
                     <div className="text-sm md:text-base opacity-80">AI Powered WhatsApp & Telegram Marketing</div>
                   </div>
+                  <img 
+                    src="/lovable-uploads/ee496013-701a-468a-b7b3-f9c769890fd3.png" 
+                    alt="KiraBot Dashboard" 
+                    className="w-full max-w-xl rounded-lg shadow-lg animate-float" 
+                  />
                 </div>
               </div>
             </div>
