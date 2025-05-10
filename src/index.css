@@ -11,35 +11,35 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 262 100% 59%;
+    --primary: 224 82% 56%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 258 100% 72%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 235 92% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 262 100% 59%;
+    --ring: 224 82% 56%;
     --radius: 0.5rem;
     
-    /* Brand Colors */
-    --gradient-top: 262 100% 59%; /* #7C4DFF */
-    --gradient-bottom: 261 100% 76%; /* #A484FF */
-    --card-bg: 259 100% 72%; /* #8F6FFF */
+    /* Brand Colors - Updated to be more professional */
+    --gradient-top: 224 82% 56%; /* #2563eb - Royal Blue */
+    --gradient-bottom: 217 91% 60%; /* #3b82f6 - Blue */
+    --card-bg: 221 83% 53%; /* #3b82f6 - Blue */
     --text-color: 0 0% 100%; /* #FFFFFF */
-    --meta-accent: 204 100% 76%; /* #84C9FF */
-    --team-accent: 151 74% 73%; /* #7DF2A9 */
-    --ai-accent: 259 100% 76%; /* #A984FF */
-    --whatsapp-green: 142 70% 49%; /* #25D366 */
+    --meta-accent: 199 89% 48%; /* #0ea5e9 - Sky Blue */
+    --team-accent: 142 71% 45%; /* #22c55e - Green */
+    --ai-accent: 226 71% 40%; /* #1d4ed8 - Deep Blue */
+    --whatsapp-green: 142 70% 49%; /* #25D366 - Original WhatsApp green */
   }
 
   .dark {
     /* We'll keep the same theme for dark mode as the branding is specific */
-    --background: 262 100% 59%;
+    --background: 224 82% 56%;
     --foreground: 0 0% 100%;
   }
 }
@@ -59,11 +59,11 @@
   }
   
   .bg-gradient {
-    background: linear-gradient(180deg, hsl(262, 100%, 59%) 0%, hsl(261, 100%, 76%) 100%);
+    background: linear-gradient(180deg, hsl(224, 82%, 56%) 0%, hsl(217, 91%, 60%) 100%);
   }
   
   .feature-card {
-    background-color: hsl(259, 100%, 72%);
+    background-color: hsl(221, 83%, 53%);
   }
   
   .whatsapp-btn {
@@ -71,14 +71,14 @@
   }
   
   .meta-icon {
-    color: hsl(204, 100%, 76%);
+    color: hsl(199, 89%, 48%);
   }
   
   .ai-icon {
-    color: hsl(259, 100%, 76%);
+    color: hsl(226, 71%, 40%);
   }
   
   .team-icon {
-    color: hsl(151, 74%, 73%);
+    color: hsl(142, 71%, 45%);
   }
 }
