@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
               {t('footer.description')}
             </p>
           </div>
-
+        </div>
 
         {/* Social Media Section */}
         <div className="mb-12">
