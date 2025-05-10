@@ -2,6 +2,12 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { 
+  Accordion, 
+  AccordionContent, 
+  AccordionItem, 
+  AccordionTrigger 
+} from './ui/accordion';
 
 interface FaqItem {
   questionKey: string;
@@ -10,17 +16,17 @@ interface FaqItem {
 
 const FaqSection: React.FC = () => {
   const { t } = useLanguage();
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs: FaqItem[] = [
     { questionKey: 'faq.q1', answerKey: 'faq.a1' },
     { questionKey: 'faq.q2', answerKey: 'faq.a2' },
     { questionKey: 'faq.q3', answerKey: 'faq.a3' },
+    { questionKey: 'faq.q4', answerKey: 'faq.a4' },
+    { questionKey: 'faq.q5', answerKey: 'faq.a5' },
+    { questionKey: 'faq.q6', answerKey: 'faq.a6' },
+    { questionKey: 'faq.q7', answerKey: 'faq.a7' },
+    { questionKey: 'faq.q8', answerKey: 'faq.a8' },
   ];
-
-  const toggleFaq = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
 
   return (
     <section className="py-16 md:py-24 bg-card-bg/30">
@@ -30,33 +36,22 @@ const FaqSection: React.FC = () => {
         </h2>
         
         <div className="max-w-3xl mx-auto">
-          {faqs.map((faq, index) => (
-            <div 
-              key={index} 
-              className="bg-white/30 backdrop-blur-sm rounded-xl mb-4 overflow-hidden shadow-md"
-            >
-              <button 
-                className="flex justify-between items-center w-full p-5 text-left"
-                onClick={() => toggleFaq(index)}
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem 
+                key={index} 
+                value={`faq-${index}`} 
+                className="bg-white/30 backdrop-blur-sm rounded-xl mb-4 overflow-hidden border-none shadow-md"
               >
-                <h3 className="text-lg font-semibold text-white">{t(faq.questionKey)}</h3>
-                {openIndex === index ? (
-                  <ChevronUp className="h-5 w-5 text-white" />
-                ) : (
-                  <ChevronDown className="h-5 w-5 text-white" />
-                )}
-              </button>
-              <div 
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-40' : 'max-h-0'
-                }`}
-              >
-                <div className="p-5 pt-0 text-white bg-black/10">
+                <AccordionTrigger className="px-5 py-4 text-left hover:no-underline">
+                  <h3 className="text-lg font-semibold text-white">{t(faq.questionKey)}</h3>
+                </AccordionTrigger>
+                <AccordionContent className="px-5 pb-4 text-white bg-black/10">
                   {t(faq.answerKey)}
-                </div>
-              </div>
-            </div>
-          ))}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>

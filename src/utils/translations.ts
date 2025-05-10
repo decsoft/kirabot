@@ -101,6 +101,26 @@ export const translations = {
     en: "Real Estate: Share listings & schedule visits",
     fr: "Immobilier: Partagez des annonces et planifiez des visites"
   },
+  "usecases.banking": {
+    en: "Banks & Microfinance: Notify customers of transactions, alerts, and credit status in real time",
+    fr: "Banques & Microfinance: Alertez vos clients sur les transactions, les crédits et les mises à jour de compte"
+  },
+  "usecases.government": {
+    en: "Public Institutions: Share announcements, tax deadlines, and service updates via Telegram or WhatsApp",
+    fr: "Institutions Publiques: Informez les citoyens des annonces publiques, échéances fiscales et actualités"
+  },
+  "usecases.logistics": {
+    en: "Logistics & Delivery Services: Update clients on delivery status and pickup confirmations automatically",
+    fr: "Logistique & Livraison: Informez automatiquement vos clients sur les livraisons et retraits"
+  },
+  "usecases.utilities": {
+    en: "Utility Providers: Remind customers of bills, service cuts, and planned maintenance",
+    fr: "Services Publics: Envoyez des rappels de factures et d'interruptions de service"
+  },
+  "usecases.agencies": {
+    en: "Digital Agencies / Freelancers: Manage client communications, automate updates, and onboard leads at scale",
+    fr: "Agences Digitales / Freelances: Automatisez la communication client, l'onboarding et les relances commerciales"
+  },
 
   // Testimonials Section
   "testimonials.title": {
@@ -114,6 +134,22 @@ export const translations = {
   "testimonials.quote2": {
     en: "95%+ open rates. Amazing!",
     fr: "Plus de 95% de taux de lecture. Incroyable !"
+  },
+  "testimonials.quote3": {
+    en: "Decsoft Bot helped us reduce customer service workload by 70%.",
+    fr: "Nous avons réduit la charge de support client de 70% grâce à Decsoft Bot."
+  },
+  "testimonials.quote4": {
+    en: "Perfect for managing multiple clients as a digital agency.",
+    fr: "Parfait pour gérer plusieurs clients en tant qu'agence."
+  },
+  "testimonials.quote5": {
+    en: "The AI assistant makes writing campaigns effortless!",
+    fr: "L'assistant IA rend la rédaction des campagnes facile et rapide !"
+  },
+  "testimonials.quote6": {
+    en: "We moved from manual messaging to fully automated outreach in a day.",
+    fr: "En un jour, nous sommes passés de l'envoi manuel à une automatisation complète."
   },
 
   // Pricing Section
@@ -178,6 +214,46 @@ export const translations = {
   "faq.a3": {
     en: "No coding required. Our platform is designed to be user-friendly for everyone.",
     fr: "Non, aucun codage n'est nécessaire. Notre plateforme est conçue pour être accessible à tous."
+  },
+  "faq.q4": {
+    en: "Can I use this tool with multiple phone numbers or businesses?",
+    fr: "Puis-je utiliser cet outil avec plusieurs numéros ou entreprises ?"
+  },
+  "faq.a4": {
+    en: "Yes, you can create multiple sender profiles inside one account.",
+    fr: "Oui, vous pouvez créer plusieurs profils d'envoi dans un seul compte."
+  },
+  "faq.q5": {
+    en: "Is Telegram bulk messaging allowed?",
+    fr: "Est-il possible d'envoyer en masse sur Telegram ?"
+  },
+  "faq.a5": {
+    en: "Yes, we offer unlimited Telegram campaigns with high open rates.",
+    fr: "Oui, la plateforme permet des campagnes Telegram illimitées."
+  },
+  "faq.q6": {
+    en: "Is the AI assistant multilingual?",
+    fr: "L'assistant IA est-il multilingue ?"
+  },
+  "faq.a6": {
+    en: "Yes, it supports English, French, Spanish and more.",
+    fr: "Oui, il prend en charge l'anglais, le français, l'espagnol et d'autres langues."
+  },
+  "faq.q7": {
+    en: "Can I connect this to my CRM or Shopify?",
+    fr: "Puis-je connecter la plateforme à mon CRM ou Shopify ?"
+  },
+  "faq.a7": {
+    en: "API access allows seamless integrations.",
+    fr: "Oui, l'API permet des intégrations transparentes."
+  },
+  "faq.q8": {
+    en: "Do I get analytics for my campaigns?",
+    fr: "Ai-je accès aux statistiques ?"
+  },
+  "faq.a8": {
+    en: "Yes, track opens, clicks, and delivery results in real time.",
+    fr: "Oui, vous pouvez suivre les taux d'ouverture, clics et livraisons en temps réel."
   },
 
   // Final CTA Section
