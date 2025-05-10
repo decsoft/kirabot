@@ -11,7 +11,6 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import PricingSection from '../components/PricingSection';
 import FaqSection from '../components/FaqSection';
 import CtaSection from '../components/CtaSection';
-import Footer from '../components/Footer';
 
 const Index = () => {
   return (
@@ -26,7 +25,6 @@ const Index = () => {
         <PricingSection />
         <FaqSection />
         <CtaSection />
-        <Footer />
         <WhatsAppButton />
       </div>
     </LanguageProvider>
