@@ -1,9 +1,9 @@
-name: Build and Upload
+name: Build and Upload Dist
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  pull_request:
 
 jobs:
   build:
@@ -13,19 +13,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: 18
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build project
         run: npm run build
 
-      - name: Upload /dist directory
-        uses: actions/upload-artifact@3d19e405ed7634e9edc87dfef1e69ea92434788a
+      - name: Upload /dist as artifact
+        uses: actions/upload-artifact@v3.1.3
         with:
-          name: dist
+          name: dist-folder
           path: dist/
