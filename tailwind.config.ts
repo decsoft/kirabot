@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// Brand specific colors
+				"gradient-top": 'hsl(var(--gradient-top))',
+				"gradient-bottom": 'hsl(var(--gradient-bottom))',
+				"card-bg": 'hsl(var(--card-bg))',
+				"meta-accent": 'hsl(var(--meta-accent))',
+				"team-accent": 'hsl(var(--team-accent))',
+				"ai-accent": 'hsl(var(--ai-accent))',
+				"whatsapp": 'hsl(var(--whatsapp-green))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +83,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 5s ease-in-out infinite',
 			}
 		}
 	},
