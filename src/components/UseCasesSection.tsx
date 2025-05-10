@@ -11,7 +11,6 @@ const UseCasesSection: React.FC = () => {
     { icon: '🏫', key: 'usecases.education' },
     { icon: '🎤', key: 'usecases.events' },
     { icon: '🏘️', key: 'usecases.realestate' },
-    { icon: '🏦', key: 'usecases.banking' },
     { icon: '🏛️', key: 'usecases.government' },
     { icon: '📦', key: 'usecases.logistics' },
     { icon: '💡', key: 'usecases.utilities' },

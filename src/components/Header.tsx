@@ -14,7 +14,7 @@ const Header: React.FC = () => {
       <div className="container px-4 mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <a href="/" className="text-white text-xl md:text-2xl font-bold">
-            Decsoft Bot
+            KiraBot
           </a>
         </div>
         
@@ -57,7 +57,7 @@ const Header: React.FC = () => {
       >
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-between items-center mb-8">
-            <span className="text-white text-xl font-bold">Decsoft Bot</span>
+            <span className="text-white text-xl font-bold">KiraBot</span>
             <button onClick={() => setMobileMenuOpen(false)}>
               <X className="h-6 w-6 text-white" />
             </button>
