@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
           <Separator className="mb-8 bg-white/20" />
           
           <div className="flex flex-col items-center justify-center">
-            <h3 className="text-white text-xl font-semibold mb-6">{t('footer.followUs')}</h3>
+            <h3 className="text-white text-xl font-semibold mb-6">{t('Follow Us')}</h3>
             <div className="flex space-x-6">
               <a href="#" className="text-white hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook className="h-8 w-8" strokeWidth={1.5} />
