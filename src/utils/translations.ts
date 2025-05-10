@@ -128,16 +128,16 @@ export const translations = {
     fr: "Ce Que Disent Nos Clients"
   },
   "testimonials.quote1": {
-    en: "We grew our sales 10× with Decsoft Bot!",
-    fr: "Nos ventes ont augmenté x10 avec Decsoft Bot !"
+    en: "We grew our sales 10× with KiraBot!",
+    fr: "Nos ventes ont augmenté x10 avec KiraBot !"
   },
   "testimonials.quote2": {
     en: "95%+ open rates. Amazing!",
     fr: "Plus de 95% de taux de lecture. Incroyable !"
   },
   "testimonials.quote3": {
-    en: "Decsoft Bot helped us reduce customer service workload by 70%.",
-    fr: "Nous avons réduit la charge de support client de 70% grâce à Decsoft Bot."
+    en: "KiraBot helped us reduce customer service workload by 70%.",
+    fr: "Nous avons réduit la charge de support client de 70% grâce à KiraBot."
   },
   "testimonials.quote4": {
     en: "Perfect for managing multiple clients as a digital agency.",
@@ -196,8 +196,8 @@ export const translations = {
     fr: "Est-ce une API Meta officielle ?"
   },
   "faq.a1": {
-    en: "Yes, Decsoft Bot uses the official Meta Cloud API for WhatsApp Business.",
-    fr: "Oui, Decsoft Bot utilise l'API Cloud Meta officielle pour WhatsApp Business."
+    en: "Yes, KiraBot uses the official Meta Cloud API for WhatsApp Business.",
+    fr: "Oui, KiraBot utilise l'API Cloud Meta officielle pour WhatsApp Business."
   },
   "faq.q2": {
     en: "Can I send unlimited messages?",
@@ -271,6 +271,10 @@ export const translations = {
   },
 
   // Footer
+  "footer.followUs": {
+    en: "Follow Us",
+    fr: "Suivez-nous"
+  },
   "footer.privacy": {
     en: "Privacy",
     fr: "Confidentialité"
@@ -282,6 +286,14 @@ export const translations = {
   "footer.contact": {
     en: "Contact",
     fr: "Contact"
+  },
+  "footer.sitemap": {
+    en: "Sitemap",
+    fr: "Plan du site"
+  },
+  "footer.cookies": {
+    en: "Cookies",
+    fr: "Cookies"
   },
   "footer.copyright": {
     en: "Decsoft AI © 2025",
