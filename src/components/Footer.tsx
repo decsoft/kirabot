@@ -34,38 +34,6 @@ const Footer: React.FC = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-white text-xl font-semibold mb-4">{t('footer.quickLinks')}</h3>
-            <ul className="space-y-2">
-              <li><a href="#features" className="text-white/80 hover:text-white transition-colors">{t('nav.features')}</a></li>
-              <li><a href="#how-it-works" className="text-white/80 hover:text-white transition-colors">{t('nav.howItWorks')}</a></li>
-              <li><a href="#pricing" className="text-white/80 hover:text-white transition-colors">{t('nav.pricing')}</a></li>
-              <li><a href="#faq" className="text-white/80 hover:text-white transition-colors">{t('nav.faq')}</a></li>
-            </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div className="lg:col-span-2">
-            <h3 className="text-white text-xl font-semibold mb-4">{t('footer.newsletter')}</h3>
-            <p className="text-white/80 mb-4">
-              {t('footer.newsletterDesc')}
-            </p>
-            <form onSubmit={handleSubscribe} className="flex gap-2">
-              <Input 
-                type="email" 
-                placeholder={t('footer.emailPlaceholder')} 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
-              />
-              <Button type="submit" className="bg-primary hover:bg-primary/90">
-                <Send className="h-5 w-5 mr-2" /> {t('footer.subscribe')}
-              </Button>
-            </form>
-          </div>
-        </div>
 
         {/* Social Media Section */}
         <div className="mb-12">
