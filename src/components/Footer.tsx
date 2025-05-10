@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-gradient-to-b from-gradient-top to-gradient-bottom py-16">
-
+      <div className="container mx-auto px-4">
         {/* Social Media Section */}
         <div className="mb-12">
           <Separator className="mb-8 bg-white/20" />
