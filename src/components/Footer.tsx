@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm">
           <div className="text-white/70 mb-4 md:mb-0">
-            &copy; {currentYear} Decsoft Bot. {t('footer.copyright')}
+            &copy; {currentYear} KiraBot. {t('footer.copyright')}
           </div>
           
           <div className="flex flex-wrap justify-center md:justify-end gap-6">
@@ -69,10 +69,10 @@ const Footer: React.FC = () => {
               {t('footer.contact')}
             </a>
             <a href="/sitemap" className="text-white/70 hover:text-white transition-colors">
-              {t('footer.sitemap')}
+              {t('Sitemap')}
             </a>
             <a href="/cookies" className="text-white/70 hover:text-white transition-colors">
-              {t('footer.cookies')}
+              {t('Cookies')}
             </a>
           </div>
         </div>
