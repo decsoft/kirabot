@@ -11,7 +11,7 @@
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
-    --primary: 224 82% 56%;
+    --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
     --secondary: 220 14% 96%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -23,23 +23,23 @@
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 224 82% 56%;
+    --ring: 160 84% 39%;
     --radius: 0.5rem;
     
-    /* Brand Colors - Updated to be more professional */
-    --gradient-top: 224 82% 56%; /* #2563eb - Royal Blue */
-    --gradient-bottom: 217 91% 60%; /* #3b82f6 - Blue */
-    --card-bg: 221 83% 53%; /* #3b82f6 - Blue */
+    /* Brand Colors - Modern Green Theme */
+    --gradient-top: 160 84% 39%; /* #0d9488 - Teal */
+    --gradient-bottom: 172 66% 50%; /* #14b8a6 - Light Teal */
+    --card-bg: 158 64% 52%; /* #10b981 - Emerald */
     --text-color: 0 0% 100%; /* #FFFFFF */
-    --meta-accent: 199 89% 48%; /* #0ea5e9 - Sky Blue */
-    --team-accent: 142 71% 45%; /* #22c55e - Green */
-    --ai-accent: 226 71% 40%; /* #1d4ed8 - Deep Blue */
+    --meta-accent: 148 60% 60%; /* #34d399 - Mint */
+    --team-accent: 142 70% 45%; /* #22c55e - Green */
+    --ai-accent: 170 80% 40%; /* #0f766e - Dark Teal */
     --whatsapp-green: 142 70% 49%; /* #25D366 - Original WhatsApp green */
   }
 
   .dark {
     /* We'll keep the same theme for dark mode as the branding is specific */
-    --background: 224 82% 56%;
+    --background: 160 84% 39%;
     --foreground: 0 0% 100%;
   }
 }
@@ -59,11 +59,11 @@
   }
   
   .bg-gradient {
-    background: linear-gradient(180deg, hsl(224, 82%, 56%) 0%, hsl(217, 91%, 60%) 100%);
+    background: linear-gradient(180deg, hsl(160, 84%, 39%) 0%, hsl(172, 66%, 50%) 100%);
   }
   
   .feature-card {
-    background-color: hsl(221, 83%, 53%);
+    background-color: hsl(158, 64%, 52%);
   }
   
   .whatsapp-btn {
@@ -71,14 +71,14 @@
   }
   
   .meta-icon {
-    color: hsl(199, 89%, 48%);
+    color: hsl(148, 60%, 60%);
   }
   
   .ai-icon {
-    color: hsl(226, 71%, 40%);
+    color: hsl(170, 80%, 40%);
   }
   
   .team-icon {
-    color: hsl(142, 71%, 45%);
+    color: hsl(142, 70%, 45%);
   }
 }
