@@ -13,8 +13,12 @@ const Header: React.FC = () => {
     <header className="bg-transparent py-4 w-full">
       <div className="container px-4 mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="text-white text-xl md:text-2xl font-bold">
-            KiraBot
+          <a href="/" className="text-white flex items-center">
+            <img 
+              src="/lovable-uploads/6943f8a9-16f4-4ca6-8d54-83f886b3eae5.png" 
+              alt="KiraBot Logo" 
+              className="h-8 md:h-10" 
+            />
           </a>
         </div>
         
@@ -57,7 +61,13 @@ const Header: React.FC = () => {
       >
         <div className="container mx-auto px-4 py-6">
           <div className="flex justify-between items-center mb-8">
-            <span className="text-white text-xl font-bold">KiraBot</span>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/6943f8a9-16f4-4ca6-8d54-83f886b3eae5.png" 
+                alt="KiraBot Logo" 
+                className="h-8" 
+              />
+            </div>
             <button onClick={() => setMobileMenuOpen(false)}>
               <X className="h-6 w-6 text-white" />
             </button>
