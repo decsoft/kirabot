@@ -25,15 +25,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gradient-to-b from-gradient-top to-gradient-bottom py-16">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Company Info */}
-          <div>
-            <div className="text-white text-2xl font-bold mb-4">Decsoft Bot</div>
-            <p className="text-white/80 mb-4">
-              {t('footer.description')}
-            </p>
-          </div>
-        </div>
+>
 
         {/* Social Media Section */}
         <div className="mb-12">
