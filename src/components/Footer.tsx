@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center text-sm">
           <div className="text-white/70 mb-4 md:mb-0">
-            &copy; {currentYear} KiraBot. {t('footer.copyright')}
+            &copy; {currentYear} KiraBot By {t('footer.copyright')}
           </div>
           
           <div className="flex flex-wrap justify-center md:justify-end gap-6">
