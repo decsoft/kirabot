@@ -1,51 +1,121 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageToggle from './LanguageToggle';
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Twitter, Mail, Send } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const Footer: React.FC = () => {
   const { t } = useLanguage();
+  const [email, setEmail] = useState('');
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Add subscription logic here
+    console.log('Subscribing email:', email);
+    setEmail('');
+    // Display success message or toast notification
+  };
+
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-top py-12">
+    <footer className="bg-gradient-to-b from-gradient-top to-gradient-bottom py-16">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-8">
-          <div className="mb-6 md:mb-0">
-            <div className="text-white text-xl font-bold mb-2">Decsoft Bot</div>
-            <div className="text-white/70">{t('footer.copyright')}</div>
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {/* Company Info */}
+          <div>
+            <div className="text-white text-2xl font-bold mb-4">Decsoft Bot</div>
+            <p className="text-white/80 mb-4">
+              {t('footer.description')}
+            </p>
           </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-white text-xl font-semibold mb-4">{t('footer.quickLinks')}</h3>
+            <ul className="space-y-2">
+              <li><a href="#features" className="text-white/80 hover:text-white transition-colors">{t('nav.features')}</a></li>
+              <li><a href="#how-it-works" className="text-white/80 hover:text-white transition-colors">{t('nav.howItWorks')}</a></li>
+              <li><a href="#pricing" className="text-white/80 hover:text-white transition-colors">{t('nav.pricing')}</a></li>
+              <li><a href="#faq" className="text-white/80 hover:text-white transition-colors">{t('nav.faq')}</a></li>
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div className="lg:col-span-2">
+            <h3 className="text-white text-xl font-semibold mb-4">{t('footer.newsletter')}</h3>
+            <p className="text-white/80 mb-4">
+              {t('footer.newsletterDesc')}
+            </p>
+            <form onSubmit={handleSubscribe} className="flex gap-2">
+              <Input 
+                type="email" 
+                placeholder={t('footer.emailPlaceholder')} 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
+              />
+              <Button type="submit" className="bg-primary hover:bg-primary/90">
+                <Send className="h-5 w-5 mr-2" /> {t('footer.subscribe')}
+              </Button>
+            </form>
+          </div>
+        </div>
+
+        {/* Social Media Section */}
+        <div className="mb-12">
+          <Separator className="mb-8 bg-white/20" />
           
-          <div className="flex items-center">
-            <LanguageToggle className="mx-4" />
-            
-            <div className="flex space-x-4 ml-4">
-              <a href="#" className="text-white/70 hover:text-white">
-                <Facebook className="h-5 w-5" />
+          <div className="flex flex-col items-center justify-center">
+            <h3 className="text-white text-xl font-semibold mb-6">{t('footer.followUs')}</h3>
+            <div className="flex space-x-6">
+              <a href="#" className="text-white hover:text-primary transition-colors" aria-label="Facebook">
+                <Facebook className="h-8 w-8" strokeWidth={1.5} />
               </a>
-              <a href="#" className="text-white/70 hover:text-white">
-                <Twitter className="h-5 w-5" />
+              <a href="#" className="text-white hover:text-primary transition-colors" aria-label="Twitter">
+                <Twitter className="h-8 w-8" strokeWidth={1.5} />
               </a>
-              <a href="#" className="text-white/70 hover:text-white">
-                <Instagram className="h-5 w-5" />
+              <a href="#" className="text-white hover:text-primary transition-colors" aria-label="Instagram">
+                <Instagram className="h-8 w-8" strokeWidth={1.5} />
               </a>
-              <a href="#" className="text-white/70 hover:text-white">
-                <Linkedin className="h-5 w-5" />
+              <a href="#" className="text-white hover:text-primary transition-colors" aria-label="LinkedIn">
+                <Linkedin className="h-8 w-8" strokeWidth={1.5} />
+              </a>
+              <a href="mailto:contact@decsoft.com" className="text-white hover:text-primary transition-colors" aria-label="Email">
+                <Mail className="h-8 w-8" strokeWidth={1.5} />
               </a>
             </div>
           </div>
         </div>
         
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-center md:justify-between items-center">
-          <div className="flex flex-wrap justify-center md:justify-start gap-6 mb-6 md:mb-0">
-            <a href="#" className="text-white/70 hover:text-white">
+        {/* Bottom Footer & Legal */}
+        <Separator className="mb-8 bg-white/20" />
+        
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm">
+          <div className="text-white/70 mb-4 md:mb-0">
+            &copy; {currentYear} Decsoft Bot. {t('footer.copyright')}
+          </div>
+          
+          <div className="flex flex-wrap justify-center md:justify-end gap-6">
+            <a href="/privacy" className="text-white/70 hover:text-white transition-colors">
               {t('footer.privacy')}
             </a>
-            <a href="#" className="text-white/70 hover:text-white">
+            <a href="/terms" className="text-white/70 hover:text-white transition-colors">
               {t('footer.terms')}
             </a>
-            <a href="#" className="text-white/70 hover:text-white">
+            <a href="/contact" className="text-white/70 hover:text-white transition-colors">
               {t('footer.contact')}
+            </a>
+            <a href="/sitemap" className="text-white/70 hover:text-white transition-colors">
+              {t('footer.sitemap')}
+            </a>
+            <a href="/cookies" className="text-white/70 hover:text-white transition-colors">
+              {t('footer.cookies')}
             </a>
           </div>
         </div>
