@@ -31,16 +31,16 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center justify-center">
             <h3 className="text-white text-xl font-semibold mb-6">{t('footer.followUs')}</h3>
             <div className="flex space-x-6">
-              <a href="https://facebook.com/kirabot" className="text-white hover:text-primary transition-colors" aria-label="Facebook">
+              <a href="https://facebook.com/decsoftai" className="text-white hover:text-primary transition-colors" aria-label="Facebook">
                 <Facebook className="h-8 w-8" strokeWidth={1.5} />
               </a>
-              <a href="https://x.com/kirabot" className="text-white hover:text-primary transition-colors" aria-label="Twitter">
+              <a href="https://x.com/decsoftai" className="text-white hover:text-primary transition-colors" aria-label="Twitter">
                 <Twitter className="h-8 w-8" strokeWidth={1.5} />
               </a>
-              <a href="https://instagram.com/kirabot" className="text-white hover:text-primary transition-colors" aria-label="Instagram">
+              <a href="https://instagram.com/decsoftai" className="text-white hover:text-primary transition-colors" aria-label="Instagram">
                 <Instagram className="h-8 w-8" strokeWidth={1.5} />
               </a>
-              <a href="mailto:support@kirabot.com" className="text-white hover:text-primary transition-colors" aria-label="Email">
+              <a href="mailto:support@decsoft.ai" className="text-white hover:text-primary transition-colors" aria-label="Email">
                 <Mail className="h-8 w-8" strokeWidth={1.5} />
               </a>
             </div>
